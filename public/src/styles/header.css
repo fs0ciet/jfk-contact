@@ -1,0 +1,87 @@
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    transition: 0.3s ease;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: transparent;
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 25px;
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1c1c1c;
+    padding: 0.625rem;
+    transition: color 0.4s ease-in;
+}
+.menu ul li a:hover{
+    color: rgb(0, 99, 255);
+}
+.bi-ul-r{
+    margin-right: 5px;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    height: auto;
+    width: calc(100% + 20px);
+    top: 2rem;
+    background: transparent;
+    z-index: 999;
+    background: #fff;
+}
+.submenu li{
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+.specialties.active .submenu, .school.active .submenu{
+    display: block;
+}
+.animate__animated.animate__fadeIn{
+    --animate-duration: 0.5s;
+}
+.navbar{
+    display: none;
+}
+.scrollY{
+    background: #fff;
+    height: 50px;
+}
+
+@media(max-width: 999px) {
+    .menu {
+      display: none;
+    }
+}
+@media (min-width: 1000px) {
+    .navbar {
+      display: none !important;
+    }
+}
+::-webkit-scrollbar{
+    width: 13px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 99, 255);
+}
