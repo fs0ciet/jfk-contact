@@ -1,0 +1,80 @@
+.mapa {
+    padding-top: 60px;
+}
+
+.contacto {
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_cont {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    height: 4em;
+    width: 20em;
+    background-color: #FF2F2F;
+    color: white;
+    border: none;
+    margin: 30px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+.boton:hover {
+    background-color: rgb(131, 1, 1);
+}
+
+@media (max-width: 1181px) {
+    .titulo_cont{
+      font-size: 25px;
+      text-align: center;
+    } 
+  }
+  @media (max-width: 1181) {
+    .boton{
+      height: 2em;
+      width: 10em;
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 281px) { 
+    .cont { 
+        width: 100%;
+    } 
+}
+
+  @media (max-width: 281px) { 
+    .titulo_cont { 
+        font-size: 15px;
+        text-align: center; 
+    } 
+}
+
+
+@media (max-width: 281px) { 
+    .boton { 
+        height: 5em;
+        width: 15em;
+        font-size: 15px;
+        float: right;
+    } 
+}
